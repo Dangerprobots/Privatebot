@@ -13,7 +13,7 @@ User     = Client(name = "AcceptUser", session_string = "AQAWgXwASfQaqtA5ciBxPU9
 
 
 @User.on_message(filters.command(["run", "approve", "start"], [".", "/"]) & AuthChat)                     
-async def approve(client,message):
+async def approve(_, message: Message):
     Id = message.chat.id
     await message.delete(True)
  
