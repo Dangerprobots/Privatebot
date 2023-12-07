@@ -15,9 +15,9 @@ User     = Client(name = "AcceptUser", session_string = "AQAWgXwASfQaqtA5ciBxPU9
 
 
 @User.on_message(filters.command(["run", "approve", "start"], [".", "/"]) & AuthChat)                     
-async def approve(_, m: Message):
-    Id = message.chat.id
-    await message.delete(True)
+async def approve(client:User, m:Message):
+    Id = m.chat.id
+    await m.delete(True)
  
     try:
        while True: # create loop is better techniq 🙃
