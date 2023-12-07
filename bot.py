@@ -63,4 +63,4 @@ async def approve_command(client: User, message: Message):
                logging.error(str(e))
 
 logging.info("Bot Started....")
-User.run()
+app.run()
