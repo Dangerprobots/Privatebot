@@ -1,7 +1,4 @@
-#import logging, asyncio
-#import random, asyncio
-import random, asyncio
-
+import logging, asyncio
 from os import environ
 from pyrogram import Client, filters
 from pyrogram.types import Message
