@@ -1,7 +1,7 @@
 import logging
 import random, asyncio
 from os import environ
-from pyrogram import Client, filters
+from pyrogram import filters
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 
