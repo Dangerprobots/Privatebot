@@ -1,5 +1,5 @@
 import logging
-import random, asyncio
+#import random, asyncio
 from os import environ
 from pyrogram import filters
 from pyrogram.types import Message
@@ -13,7 +13,7 @@ User = Client(name="AcceptUser", api_id=environ.get("API_ID"), api_hash=environ.
 #MAX_RETRIES = 5  # Maximum number of retries for approval
 #RETRY_INTERVAL = 11  # Interval (in seconds) to wait before retrying
 
-async def approve_all_join_requests(user, chat_id):
+def approve_all_join_requests(user, chat_id):
     max_users_per_run = 10000  # Maximum users to approve in one run
 
     try:
